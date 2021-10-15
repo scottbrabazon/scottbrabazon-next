@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Rokkitt";
+  src:  url("../public/fonts/Rokkitt-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Rokkitt";
+  src:  url("../public/fonts/Rokkitt-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/******** Definings *********/
+@import "_variables.scss";
+
+h1, h2, h3, a, p, li, span {
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 0.9em;
+    margin: 0 0 0.7em 0;
+    color: $primary-color;
+    a {color: $primary-color;}
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 0.9em;
+    margin: 1em 0 0.2em 0;
+    color: $primary-color;
+    a {color: $primary-color;}
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 0.9em;
+    margin: 0 0 0.5em 0;
+    color: $text-color;
+}
+
+a {
+    margin-top: inherit;
+    color: $text-color;
+}
+
+p, li {
+    margin: 0 0 1em 0;
+    padding: 0;
+    color: $text-color;
+}
+
+// h1:last-child, h2:last-child, h3:last-child, a:last-child, p:last-child, li:last-child {
+//     margin: 2;
+// }

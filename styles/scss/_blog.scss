@@ -1,0 +1,149 @@
+/* Blog Index */
+
+.primary-content {
+	p {
+		display: block;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+	.read-more {
+		color: #b6883f;
+	    font-size: 1.3rem;
+	    font-weight: 700;
+	    text-decoration: underline;
+	    margin: 0 auto 3rem 0;
+	    display: block;
+	}
+	div {
+		margin: 0.5rem 0 !important;
+	}
+	cursor: pointer;
+	margin-bottom: 3rem;
+}
+
+/* Blog Post */
+
+.blog-post {
+	// width: 86%;
+	h1, h2, h3, p {
+		text-align: left;
+	}
+	margin-top: 2rem;
+	p:first-of-type {
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+	.description a {
+		color: $primary-color;
+		text-decoration: underline;
+	}
+	div {
+		margin-bottom: 1.5rem !important;
+	}
+	h3 {
+		color: $primary-color;
+	}
+	li {
+		list-style: none;
+		list-style-position: inside;
+	}
+	li::before {
+		// content: url('../public/img/bullet.gif');
+		color: $primary-color;
+		margin-right: 0.7em;
+	}
+	ul {
+		margin: 0 0 0.7em 0;
+		padding: 0;
+		color: $text-color;
+	}
+}
+
+.blog-post-recent {
+	padding: 0 7%;
+	width: 86%;
+	clear: left;
+	margin-top: 20px;
+	h2 {
+		color: $primary-color;
+	}
+}
+
+.addthis_sharing_toolbox {
+	margin-top: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.blog-post{
+		margin-top: 0;
+		h1 {
+			margin-top: 0;
+		}
+		padding-right: 2rem;
+	}
+}
+
+@media screen and (min-width: 890px) {
+
+	.archive-panel {
+		width: 15%;
+		// float: right;
+		margin: 35px 7% 0 1%;
+		padding: 0 0 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.archive-panel-push {
+		width: 15%;
+		// float: right;
+		margin: 102px 7% 0 1%;
+		padding: 0 0 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.primary-content {
+		display: inline-block;
+		width: 29%;
+		vertical-align: top;
+		padding: 0 3% 0 1%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+		margin-bottom: 3rem;
+		h2 {
+			margin-top: 0;
+		}
+		.read-more {
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+	.postContainer {
+		display: flex;
+	}
+
+	.blog-post-recent {
+		width: 21.5%;
+		// float: right;
+		padding: 0 7% 0 1.75%;
+		margin: 25px 0 0 1.75%;
+		clear: none;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+	}
+	.blog-post {
+		width: 60.7%;
+		// float: left;
+	}
+}
