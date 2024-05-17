@@ -32,8 +32,8 @@ const Contact = () => {
                   <div className="expertise-col">
                      <h2>Platforms</h2>
                      <ul>
-                        <li>Wordpress</li>
                         <li>Contentful</li>
+                        <li>SilverStripe CMS</li>
                         <li>Aurora Commerce</li>
                         <li>Shopify</li>
                         <li>Craft</li>
