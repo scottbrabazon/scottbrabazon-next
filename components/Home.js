@@ -12,7 +12,6 @@ const Home = ({match}) => {
    return (
 
       <div className="home fade-in">
-
          <header>
             {/*<div>
                <HeaderImg />
@@ -24,9 +23,9 @@ const Home = ({match}) => {
                </div>
                <h1>Scott Brabazon</h1>
                <h2>Frontend developer and designer</h2>
-               <p>Hello, I&rsquo;m Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business.</p>
-               <p>As a lifelong learner, I believe skills can be taught, however the willingness to keep improving and having that all important inquisitive mindset is a part of my personality. I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.</p>
-               <p>I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease. I currently work remotely or within the northwest of England and I am open for new opportunities.</p>
+               <p>Hello, I&#39;m Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business.</p>
+               <p>As a lifelong learner, I believe skills can be taught, however the willingness to keep improving and having that all important inquisitive mindset is a part of my personality. I&#39;m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.</p>
+               <p>I&#39;m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease. I currently work remotely or within the northwest of England and I am open for new opportunities.</p>
             </div>
          </header>
 
@@ -58,7 +57,7 @@ const Home = ({match}) => {
                <div className="retail">
                   <RetailImg />
                   <h2>Retail</h2>
-                  <p>It's estimated that there are now 2.14 billion digital buyers worldwide, representing about 27.2 percent of the global population. This number has been rising rapidly and is expected to continue growing. I’ve worked with some major UK retailers and can help you maximize your results, leveraging this expanding market.</p>
+                  <p>It&#39;s estimated that there are now 2.14 billion digital buyers worldwide, representing about 27.2 percent of the global population. This number has been rising rapidly and is expected to continue growing. I&#39;ve worked with some major UK retailers and can help you maximize your results, leveraging this expanding market.</p>
                   <p className="cta">Take a look</p>
                </div>
             </Link>
