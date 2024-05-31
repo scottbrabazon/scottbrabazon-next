@@ -1,20 +1,35 @@
 /* Blog Index */
 
 .primary-content {
+	h2 {
+		margin-bottom: 1rem;
+		text-align: left;
+	}
+	img {
+		margin-bottom: 0.5rem;
+	}
 	p {
 		display: block;
 		overflow: hidden;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
+		text-align: left;
 	}
 	.read-more {
 		color: #b6883f;
-	    font-size: 1.3rem;
-	    font-weight: 700;
-	    text-decoration: underline;
-	    margin: 0 auto 3rem 0;
-	    display: block;
+		font-size: 1rem;
+		font-weight: bold;
+		margin: 1rem auto 3rem 0;
+		display: flex;
+		justify-content: start;
+	}
+	.read-more:before {
+		content: url("/img/circle-arrow-right-solid.svg");
+    	display: inline-block;
+    	height: 1.5rem;
+    	width: 1.5rem;
+    	margin-right: 0.5rem;
 	}
 	div {
 		margin: 0.5rem 0 !important;
@@ -26,15 +41,14 @@
 /* Blog Post */
 
 .blog-post {
+	img {
+		margin-bottom: 2rem;
+	}
 	// width: 86%;
 	h1, h2, h3, p {
 		text-align: left;
 	}
 	margin-top: 2rem;
-	p:first-of-type {
-		font-size: 1.2em;
-		font-weight: 600;
-	}
 	.description a {
 		color: $primary-color;
 		text-decoration: underline;
@@ -45,19 +59,30 @@
 	h3 {
 		color: $primary-color;
 	}
-	li {
-		list-style: none;
-		list-style-position: inside;
-	}
-	li::before {
-		// content: url('../public/img/bullet.gif');
-		color: $primary-color;
-		margin-right: 0.7em;
-	}
 	ul {
-		margin: 0 0 0.7em 0;
-		padding: 0;
-		color: $text-color;
+		list-style: initial;
+		padding-left: 1rem;
+		margin-bottom: 1rem;
+	}
+	li {
+		margin-bottom: 0.1rem;
+	}
+	li p {
+		margin-bottom: 0;
+	}
+	li::marker {
+		color: $primary-color;
+	}
+	blockquote {
+		margin-left: 0;
+	}
+	blockquote p {
+		font-family: 'Playfair', serif;
+    	font-weight: 500;
+    	color: $primary-color;
+    	font-size: 1.5rem;
+    	line-height: 1.2;
+    	font-style: italic;
 	}
 }
 

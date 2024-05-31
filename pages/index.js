@@ -11,7 +11,7 @@ export default function HomePage() {
     <Fragment>
 
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Scott Brabazon | Frontend Developer | Manchester</title>
         <meta name="description" content="Hello, I'm Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business." />

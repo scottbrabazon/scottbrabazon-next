@@ -27,21 +27,21 @@ export default function Ecommerce({newsposts}) {
     <Fragment>
 
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ecommerce</title>
+        <title>Retail</title>
         <meta name="description" content="It’s estimated that there are now 2.14 billion global digital buyers. That’s a lot of potential customers. In fact, with an expected global population of 7.87 billion people, that’s about 27.2 percent of the world’s population shopping online. What’s more, this number has been rising rapidly over the years and is expected to continue doing so. I’ve worked with some of the major retailers in the UK and can help you maximise your results." />
         <meta name="author" content="Scott Brabazon" />
-        <meta property="og:title" content="Ecommerce" />
+        <meta property="og:title" content="Retail" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.scottbrabazon.com/ecommerce" />
+        <meta property="og:url" content="https://www.scottbrabazon.com/retail" />
         <meta property="og:description" content="It’s estimated that there are now 2.14 billion global digital buyers. That’s a lot of potential customers. In fact, with an expected global population of 7.87 billion people, that’s about 27.2 percent of the world’s population shopping online. What’s more, this number has been rising rapidly over the years and is expected to continue doing so. I’ve worked with some of the major retailers in the UK and can help you maximise your results." />
         {/*<meta property="og:image" content="image.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />*/}
       </Head>
 
       <header>
-         <h1>Ecommerce</h1>
+         <h1>Retail</h1>
       </header>
 
       <Gallery 

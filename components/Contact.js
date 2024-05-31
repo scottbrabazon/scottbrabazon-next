@@ -11,22 +11,21 @@ const Contact = () => {
 
             <div className="about">
 
-               <p>As an experienced frontend developer, I can offer the following services anywhere in the northwest of England. Get in touch to speak in more detail about your needs.</p>
+               <p>As an experienced frontend developer and designer, I can offer the following services anywhere in the northwest of England or remotely. Get in touch to speak in more detail about your needs.</p>
                
                <div className="expertise">
                   <div className="expertise-col">
                      <h2>Tech</h2>
                      <ul>
                         <li>HTML</li>
-                        <li>CSS</li>
+                        <li>CSS (SCSS)</li>
                         <li>Javascript</li>
+                        <li>JQuery</li>
                         <li>GIT</li>
-                        <li>Sass</li>
                         <li>Gulp</li>
                         <li>Animation (GSAP)</li>
                         <li>React.js</li>
                         <li>Next.js</li>
-                        <li>GraphQL</li>
                      </ul> 
                   </div>
                   <div className="expertise-col">
@@ -35,8 +34,7 @@ const Contact = () => {
                         <li>Contentful</li>
                         <li>SilverStripe CMS</li>
                         <li>Aurora Commerce</li>
-                        <li>Shopify</li>
-                        <li>Craft</li>
+                        <li>Craft CMS</li>
                         <li>Monetate</li>
                         <li>Mailchilp</li>
                         <li>Campaign Monitor</li>
@@ -50,6 +48,7 @@ const Contact = () => {
                         <li>Adobe Illustrator</li>
                         <li>Adobe InDesign</li>
                         <li>Adobe After Effects</li>
+                        <li>Adobe XD</li>
                         <li>Microsoft Office</li>
                         <li>Figma</li>
                         <li>Final Cut Pro</li>

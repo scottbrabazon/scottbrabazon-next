@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import {Sections} from '../Data/Sections';
-// import {Projects} from '../Data/Projects';
-// import axios from 'axios';
 
 const ScottBrabazonContext = React.createContext();
 
@@ -21,7 +19,7 @@ export class Provider extends Component {
                img {
                  url
                }
-               section
+               type
                lightboxCollection {
                  items {
                    url

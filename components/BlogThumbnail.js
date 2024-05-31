@@ -7,7 +7,7 @@ const BlogThumbnail = ({newspost, index}) => {
 
    return (
 
-      <Link href={"/news/" + url} passHref>
+      <Link href={"/insights/" + url} passHref>
          <div className="primary-content fade-in">
             <h2>{newsTitle}</h2>
             <Image src={"https:" + newsMainImage.fields.file.url} alt={newsTitle} width="728" height="294" />

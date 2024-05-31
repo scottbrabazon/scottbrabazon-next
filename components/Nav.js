@@ -2,6 +2,7 @@ import {Consumer} from './Context';
 import Link from 'next/link';
 import {Fragment} from 'react';
 import {useRouter} from 'next/router';
+import Image from 'next/image';
 
 const Nav = () => {
 
@@ -65,39 +66,41 @@ const Nav = () => {
          <div id="nav-container">
             <nav id="nav">
 
-               <Link href="/" >
+               <Link href="/" legacyBehavior >
                   <a onClick={() => closeOnSelection()} className={router.pathname == "/" ? "selected" : ""}>Home</a>
                </Link>
 
-               <Link href="/projects" >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/projects" ? "selected" : ""}>Projects</a>
+               <Link href="/development" legacyBehavior >
+                  <a onClick={() => closeOnSelection()} className={router.pathname == "/development" ? "selected" : ""}>Development</a>
                </Link>
 
-               <Link href="/react" >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/react" ? "selected" : ""}>React</a>
-               </Link>
-
-               <Link href="/ecommerce" >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/ecommerce" ? "selected" : ""}>Ecommerce</a>
-               </Link>
-
-               <Link href="/email" >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/email" ? "selected" : ""}>Email</a>
-               </Link>
-
-               <Link href="/design" >
+               <Link href="/design" legacyBehavior >
                   <a onClick={() => closeOnSelection()} className={router.pathname == "/design" ? "selected" : ""}>Design</a>
                </Link>
 
-               <Link href="/news" >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/news/[url]" || router.pathname == "/news" ? "selected" : ""}>News</a>
+               <Link href="/retail" legacyBehavior >
+                  <a onClick={() => closeOnSelection()} className={router.pathname == "/retail" ? "selected" : ""}>Retail</a>
                </Link>
 
-               <Link href="/contact" >
+               <Link href="/insights" legacyBehavior >
+                  <a onClick={() => closeOnSelection()} className={router.pathname == "/insights/[url]" || router.pathname == "/insights" ? "selected" : ""}>Insights</a>
+               </Link>
+
+               <Link href="/contact" legacyBehavior >
                   <a onClick={() => closeOnSelection()} className={router.pathname == "/contact" ? "selected" : ""}>Contact</a>
                </Link>
                
             </nav>
+         </div>
+
+         <div className="nav-contact-links">
+            <a href="https://github.com/scottbrabazon" target="blank">
+                  <Image src="/img/github.svg" alt="Github" width="22" height="22" />
+               </a>
+               &nbsp;&nbsp;
+               <a href="https://uk.linkedin.com/in/scottbrabazon" target="blank">
+                  <Image src="/img/linkedin.svg" alt="LinkedIn" width="22" height="22" />
+               </a>
          </div>
 
       </Fragment>

@@ -10,6 +10,7 @@ body {
 img {
 	text-align: center;
 	max-width: 100%;
+	height: auto !important;
 }
 
 ul {
@@ -27,13 +28,14 @@ li {
 	margin: 0 auto;
 	width: 90%;
 	margin-top: 1rem;
+	position: relative;
 }
 
 .paging {
 	width: 100%;
 	text-align: center;
 	margin-top: 20px;
-	font-family: 'Rokkitt', serif;
+	font-family: 'Poppins', serif;
 	color: $primary-color;
 	display: inline-block;
 }

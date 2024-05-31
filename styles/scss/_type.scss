@@ -1,27 +1,110 @@
+/* poppins-regular - latin */
 @font-face {
-  font-family: "Rokkitt";
-  src:  url("../public/fonts/Rokkitt-Regular.ttf") format("truetype"),
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/poppins/poppins-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
+/* poppins-italic - latin */
 @font-face {
-  font-family: "Rokkitt";
-  src:  url("../public/fonts/Rokkitt-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../public/fonts/poppins/poppins-v21-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/poppins/poppins-v21-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../public/fonts/poppins/poppins-v21-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-700italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../public/fonts/poppins/poppins-v21-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* poppins-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../public/fonts/poppins/poppins-v21-latin-900italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/poppins/poppins-v21-latin-900italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* playfair-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/playfair/playfair-v2-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/playfair/playfair-v2-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* playfair-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../public/fonts/playfair/playfair-v2-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/playfair/playfair-v2-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* playfair-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/playfair/playfair-v2-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/playfair/playfair-v2-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* playfair-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../public/fonts/playfair/playfair-v2-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../public/fonts/playfair/playfair-v2-latin-700italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /******** Definings *********/
+
 @import "_variables.scss";
 
 h1, h2, h3, a, p, li, span {
     text-align: center;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Poppins', serif;
     text-decoration: none;
 }
 
 h1 {
-    font-size: 2.3em;
+    font-size: 3.2em;
     line-height: 0.9em;
     margin: 0 0 0.7em 0;
+    font-family: 'Playfair', serif;
+    font-weight: 500;
     color: $primary-color;
     a {color: $primary-color;}
 }
@@ -30,6 +113,8 @@ h2 {
     font-size: 1.5em;
     line-height: 0.9em;
     margin: 1em 0 0.2em 0;
+    font-family: 'Playfair', serif;
+    font-weight: 500;
     color: $primary-color;
     a {color: $primary-color;}
 }
@@ -38,6 +123,7 @@ h3 {
     font-size: 1.5em;
     line-height: 0.9em;
     margin: 0 0 0.5em 0;
+    font-weight: 600;
     color: $text-color;
 }
 
@@ -50,6 +136,9 @@ p, li {
     margin: 0 0 1em 0;
     padding: 0;
     color: $text-color;
+    font-weight: 400;
+    line-height: 1.4;
+
 }
 
 // h1:last-child, h2:last-child, h3:last-child, a:last-child, p:last-child, li:last-child {

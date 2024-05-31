@@ -20,7 +20,7 @@ export async function getStaticProps() {
   }
 }
 
-// scottbrabazon.com/news
+// scottbrabazon.com/insights
 
 export default function NewsHomepage({newsposts}) {
 
@@ -29,21 +29,21 @@ export default function NewsHomepage({newsposts}) {
     <Fragment>
 
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Latest news</title>
-        <meta name="description" content="XXXXXXXXXX" />
+        <title>Insights</title>
+        <meta name="description" content="The latest insights in the world of design and front end developemnt." />
         <meta name="author" content="Scott Brabazon" />
-        <meta property="og:title" content="Latest news" />
+        <meta property="og:title" content="Insights" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.scottbrabazon.com/news" />
-        <meta property="og:description" content="XXXXXXXXXX" />
+        <meta property="og:url" content="https://www.scottbrabazon.com/insights" />
+        <meta property="og:description" content="The latest insights in the world of design and front end developemnt." />
         {/*<meta property="og:image" content="image.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />*/}
       </Head>
 
       <header>
-        <h1>Latest news</h1>
+        <h1>Insights</h1>
       </header>
 
       <div>

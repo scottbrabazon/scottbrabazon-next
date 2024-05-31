@@ -26,6 +26,7 @@
 	background-color: rgba(0,0,0,0.8);
 	width: 100%;
 	top: -600px;
+	margin-bottom: 5rem;
 }
 
 nav {
@@ -45,6 +46,17 @@ nav {
 	a:hover {
 		color: $secondary-color;
 	}
+}
+
+.nav-contact-links {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 4;
+}
+
+.nav-contact-links img:hover {
+	filter: invert(53%) sepia(80%) saturate(330%) hue-rotate(358deg) brightness(89%) contrast(88%);
 }
 
 .rollover li {
@@ -121,6 +133,8 @@ nav {
 	}
 	nav a::after { 
 		 content: " | ";
+		 padding: 0 0.25rem;
+		 color: $primary-color;
 	}
 	nav a:last-of-type::after { 
 		 content: "";

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
 
-const ReactImg = () => {
+const DevelopmentImg = () => {
 
 	var tl = gsap.timeline({ repeat: -1 });
 	const reacticon1 = useRef();
@@ -199,7 +199,7 @@ const ReactImg = () => {
    );
 }
 
-export default ReactImg;
+export default DevelopmentImg;
 
 
 

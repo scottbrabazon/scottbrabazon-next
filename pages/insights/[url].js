@@ -47,15 +47,15 @@ export default function NewsPostpage({newsPost, newsposts}) {
     <Fragment>
 
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{newsTitle}</title>
-        <meta name="description" content={newsContent.content[0].content.[0].value} />
+        <meta name="description" content={newsContent.content[0].content[0].value} />
         <meta name="author" content="Scott Brabazon" />
         <meta property="og:title" content={newsTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={"https:" + newsMainImage.fields.file.url} />
-        <meta property="og:description" content={newsContent.content[0].content.[0].value} />
+        <meta property="og:description" content={newsContent.content[0].content[0].value} />
         {/*<meta property="og:image" content="image.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />*/}
       </Head>

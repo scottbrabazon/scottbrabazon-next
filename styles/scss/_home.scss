@@ -1,7 +1,7 @@
 .home .header-decoration {
-	margin: 2rem auto 0.5rem;
+	margin: 5rem auto 0.5rem;
 	width: 50%;
-	max-width: 10rem;
+	max-width: 15rem;
 	display: block;
 }
 
@@ -14,22 +14,24 @@
 	padding-bottom: 3rem;
 }
 
-// .home header p {
-// 	text-align: left;
-// }
+.home header p {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .home header p:first-of-type {
-	font-weight: bold;
+	font-weight: 600;
 	margin-top: 1.5rem;
 }
 
 .home header h1 {
 	margin: 0;
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 }
 
 .home header h2 {
-	margin-top: 0.5rem;
+	margin: 0 0 3rem;
 	color: #fff;
 	font-size: 1.2rem;
 }
@@ -37,20 +39,21 @@
 .home header img {
 	display: block;
 	width: 90%;
-	margin: 0 auto 2.5rem;
+	margin: 0 auto;
 }
 
 .quote {
 	// border-top: 1px solid #fff;
 	// border-bottom: 1px solid #fff;
 	font-style: italic;
-	font-size: 	1.5rem;
+	font-size: 	2rem;
 	padding: 2.5rem 2rem 2rem;
 	background: url("../public/img/open-quote.svg") left top no-repeat, url("../public/img/close-quote.svg") right bottom no-repeat;
     background-size: 2.5rem;
     margin: 1.5rem 0 1rem;
     p {
     	margin: 0;
+    	font-family: 'Playfair', serif;
     }
 }
 
@@ -72,29 +75,33 @@
 
 .catagories .cta {
 	color: #b6883f;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: bold;
-	text-decoration: underline;
-	margin: 0 auto 3rem 0;
-	display: block;
-	// text-align: left;
+	margin: 1rem auto 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.react:hover .cta, .react:hover h2 {
-	color: $secondary-color !important;
-} 
+.catagories .cta:before {
+	content: url("/img/circle-arrow-right-solid.svg");
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
 
-.ecommerce:hover .cta, .ecommerce:hover h2 {
+.development:hover .cta, .development:hover h2 {
 	color: $secondary-color !important;
-} 
-
-.email:hover .cta, .email:hover h2 {
-	color: $secondary-color !important;
-} 
+}  
 
 .design:hover .cta, .design:hover h2 {
 	color: $secondary-color !important;
 } 
+
+.retail:hover .cta, .retail:hover h2 {
+	color: $secondary-color !important;
+}
 
 
 
@@ -102,13 +109,22 @@
 
 @media screen and (min-width: 768px) {
 
+	.home .header-decoration {
+		margin: 1rem auto 0.5rem;
+	}	
+
 	.home header {
 		display: flex;
 		justify-content: space-between;
 	}
 
 	.home header > div {
-		width: 47%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.home p, .home h1, .home h2,  {
+		text-align: center;
 	}
 
 	.home header div:first-of-type {
@@ -116,19 +132,15 @@
 		align-self: center;
 	}
 
-	.home header h1 {
-		text-align: center;
-	}
-
-	.home header h2 {
-		text-align: center;
-	}
-
 	.quote {
-		font-size: 1.8rem;
+		font-size: 2.1rem;
         padding: 0 0 0rem 1.6em;
 	    background-size: 2rem;
 		margin: 2rem 0;
+	}
+
+	.quote p {
+		line-height: 1.2;
 	}
 
 	.catagories {
@@ -138,8 +150,9 @@
 		padding-top: 4rem;
 	}
 
-	.catagories div {
-		width: 48%;
+	.catagories a {
+		display: block;
+		width: 30%;
 	}
 }
 

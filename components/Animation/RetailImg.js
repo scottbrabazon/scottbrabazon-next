@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
 
-const EcommerceImg = () => {
+const RetailImg = () => {
 
 	var tl = gsap.timeline({ repeat: -1 });
 	const golddress = useRef();
@@ -487,7 +487,7 @@ const EcommerceImg = () => {
    );
 }
 
-export default EcommerceImg;
+export default RetailImg;
 
 
 
