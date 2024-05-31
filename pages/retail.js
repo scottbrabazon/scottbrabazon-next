@@ -1,6 +1,7 @@
 import {Fragment} from 'react';
 import Gallery from '../components/Gallery';
-import Head from 'next/head'
+import Head from 'next/head';
+import Script from 'next/script';
 
 // scottbrabazon.com/ecommerce
 
@@ -39,6 +40,19 @@ export default function Ecommerce({newsposts}) {
         {/*<meta property="og:image" content="image.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />*/}
       </Head>
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-TG1PM9QJQ3"
+        strategy="afterInteractive"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TG1PM9QJQ3');
+        `}
+      </Script>
 
       <header>
          <h1>Retail</h1>
