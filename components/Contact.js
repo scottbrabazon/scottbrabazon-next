@@ -27,6 +27,7 @@ const Contact = () => {
                         <li>React.js</li>
                         <li>Next.js</li>
                         <li>Email</li>
+                        <li>Bootstrap</li>
                      </ul> 
                   </div>
                   <div className="expertise-col">
