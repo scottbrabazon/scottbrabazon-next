@@ -53,6 +53,13 @@ nav {
 	top: 0;
 	right: 0;
 	z-index: 4;
+	display: flex;
+	align-items: flex-end;
+}
+
+.nav-contact-links a {
+	display: block;
+	padding-left: 0.75rem;
 }
 
 .nav-contact-links img:hover {

@@ -97,9 +97,11 @@ const Nav = () => {
             <a href="https://github.com/scottbrabazon" target="blank">
                   <Image src="/img/github.svg" alt="Github" width="22" height="22" />
                </a>
-               &nbsp;&nbsp;
                <a href="https://uk.linkedin.com/in/scottbrabazon" target="blank">
                   <Image src="/img/linkedin.svg" alt="LinkedIn" width="22" height="22" />
+               </a>
+               <a href="mailto:scott.brabazon@googlemail.com" target="blank">
+                  <Image src="/img/email.svg" alt="LinkedIn" width="22" height="22" />
                </a>
          </div>
 

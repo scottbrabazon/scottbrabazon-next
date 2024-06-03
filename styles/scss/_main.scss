@@ -231,7 +231,7 @@ footer {
 			border-color: $primary-color;
 		}
 		h2 {
-			margin: 0 0 1rem;
+			margin: 0 0 0.5rem;
 			font-size: 1.8rem;
 		}
 		p {
@@ -248,7 +248,8 @@ footer {
 			border: none;
 			margin-bottom: 2rem;
 			h2 {
-				display: none;
+				// color: #fff;
+				font-size: 1.5rem;
 			}
 		}
 	}
