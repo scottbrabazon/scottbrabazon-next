@@ -26,6 +26,7 @@ const Contact = () => {
                         <li>Animation (GSAP)</li>
                         <li>React.js</li>
                         <li>Next.js</li>
+                        <li>Email</li>
                      </ul> 
                   </div>
                   <div className="expertise-col">
