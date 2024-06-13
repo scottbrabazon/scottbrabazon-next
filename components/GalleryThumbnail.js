@@ -11,8 +11,9 @@ const Thumbnail = ({ name, href, img, lightbox, index }) => {
 
   const handleOpenLightbox = (event, idx, lb) => {
       gtag('event', 'click', {
-        event_category: 'User click',
-        event_label: name
+        event_category: 'User Interaction',
+        event_label: `Image Clicked: ${name} (Index: ${idx})`,
+        event_action: 'open_lightbox'
       });
     if (lb && lb.items && lb.items.length > 0) {
       event.preventDefault();
