@@ -5,10 +5,15 @@ import 'yet-another-react-lightbox/styles.css';
 import PropTypes from 'prop-types';
 
 const Thumbnail = ({ name, href, img, lightbox, index }) => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
   const handleOpenLightbox = (event, idx, lb) => {
+      gtag('event', 'click', {
+        event_category: 'User click',
+        event_label: name
+      });
     if (lb && lb.items && lb.items.length > 0) {
       event.preventDefault();
       setIsOpen(true);
