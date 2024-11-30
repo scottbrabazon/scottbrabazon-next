@@ -53,8 +53,10 @@ const Thumbnail = ({ name, href, img, lightbox, index }) => {
         href={href}
         target="_blank"
         rel="noreferrer"
+        className="title"
       >
-        <p>{name}</p>
+        <p className="project-title">{name}</p>
+        <p className="read-more">View project</p>
       </a>
       <div>
         {isOpen && lightboxImages.length > 0 && (

@@ -8,10 +8,10 @@
 	.thumbnail-container {
 		display: flex;
 		flex-direction: column;
+		justify-content: stretch;
 		margin: 0 0.5rem;
 		width: 150px;
 		aspect-ratio: 50 / 43 !important;
-		;
 	}
 	a:last-of-type {
 		margin-bottom: 1.5rem;
@@ -23,6 +23,15 @@
 	p {
 		text-align: center;
 		line-height: 1.2;
+	}
+	.title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+	.project-title {
+		margin-bottom: 0;
 	}
 }
 
@@ -38,11 +47,16 @@
 		-webkit-transition-property: transform;
 		transition-property: transform;
 	}
-	.grow-rotate:hover,
-	.grow-rotate:focus,
-	.grow-rotate:active {
+	.thumbnail-container:hover .grow-rotate,
+	.thumbnail-container:focus .grow-rotate,
+	.thumbnail-container:active .grow-rotate {
 		-webkit-transform: scale(1.05) rotate(2deg);
 		transform: scale(1.05) rotate(2deg);
+	}
+	.thumbnail-container:hover .read-more,
+	.thumbnail-container:focus .read-more,
+	.thumbnail-container:active .read-more {
+		color: $secondary-color;
 	}
 	.pageContainer {
 		display: flex;

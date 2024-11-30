@@ -23,6 +23,23 @@ li {
 	text-align: center;
 }
 
+.read-more {
+	color: #b6883f;
+	font-size: 0.9rem;
+	font-weight: bold;
+	margin: 0.75rem auto 3rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.read-more:before {
+	content: url("/img/circle-arrow-right-solid.svg");
+	display: inline-block;
+	height: 0.9rem;
+	width: 0.9rem;
+	margin-right: 0.5rem;
+}
+
 .main-container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -229,6 +246,10 @@ footer {
 			border-style: solid;
 			border-width: 0 0 0 1px;
 			border-color: $primary-color;
+		}
+		.primary-content:hover .read-more, 
+		.primary-content:hover h2 {
+			color: $secondary-color;
 		}
 		h2 {
 			margin: 0 0 0.5rem;

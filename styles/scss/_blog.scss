@@ -16,26 +16,16 @@
 		-webkit-box-orient: vertical;
 		text-align: left;
 	}
-	.read-more {
-		color: #b6883f;
-		font-size: 1rem;
-		font-weight: bold;
-		margin: 1rem auto 3rem 0;
-		display: flex;
-		justify-content: start;
-	}
-	.read-more:before {
-		content: url("/img/circle-arrow-right-solid.svg");
-    	display: inline-block;
-    	height: 1.5rem;
-    	width: 1.5rem;
-    	margin-right: 0.5rem;
-	}
 	div {
 		margin: 0.5rem 0 !important;
 	}
 	cursor: pointer;
 	margin-bottom: 3rem;
+}
+
+.primary-content:hover .read-more, 
+.primary-content:hover h2 {
+	color: $secondary-color;
 }
 
 /* Blog Post */
@@ -81,9 +71,11 @@
     	font-weight: 500;
     	color: $primary-color;
     	font-size: 1.5rem;
-    	line-height: 1.2;
+    	line-height: 1.1;
+    
     	font-style: italic;
 	}
+
 }
 
 .blog-post-recent {
@@ -146,6 +138,8 @@
 		}
 		.read-more {
 			margin-bottom: 0;
+			display: flex;
+			justify-content: left;
 		}
 	}
 	

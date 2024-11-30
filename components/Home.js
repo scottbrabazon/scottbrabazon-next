@@ -23,7 +23,7 @@ const Home = ({match}) => {
                </div>
                <h1>Scott Brabazon</h1>
                <h2>Frontend developer and designer</h2>
-               <p>Hello, I&#39;m Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business.</p>
+               <p>Hello, I&#39;m Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked with some of the very biggest names in the business.</p>
                <p>As a lifelong learner, I believe skills can be taught, however the willingness to keep improving and having that all important inquisitive mindset is a part of my personality. I&#39;m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.</p>
                <p>I&#39;m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease. I currently work remotely or within the northwest of England and I am open for new opportunities.</p>
             </div>

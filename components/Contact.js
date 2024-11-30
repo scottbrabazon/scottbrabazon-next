@@ -36,11 +36,15 @@ const Contact = () => {
                         <li>Contentful</li>
                         <li>SilverStripe CMS</li>
                         <li>Aurora Commerce</li>
+                        <li>Shopify</li>
                         <li>Craft CMS</li>
                         <li>Monetate</li>
-                        <li>Mailchilp</li>
+                        <li>Mailchimp</li>
                         <li>Campaign Monitor</li>
                         <li>Emarsys</li>
+                        <li>Slack</li>
+                        <li>Trello</li>
+                        <li>Jira</li>
                      </ul>
                   </div>
                   <div className="expertise-col">
@@ -49,11 +53,9 @@ const Contact = () => {
                         <li>Adobe Photoshop</li>
                         <li>Adobe Illustrator</li>
                         <li>Adobe InDesign</li>
-                        <li>Adobe After Effects</li>
                         <li>Adobe XD</li>
                         <li>Microsoft Office</li>
                         <li>Figma</li>
-                        <li>Final Cut Pro</li>
                         <li>Cinema 4D</li>
                      </ul>
                   </div>
