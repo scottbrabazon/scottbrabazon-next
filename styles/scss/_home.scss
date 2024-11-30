@@ -54,6 +54,7 @@
     p {
     	margin: 0;
     	font-family: 'Playfair', serif;
+    	line-height: 1.1;
     }
 }
 
@@ -139,9 +140,6 @@
 		margin: 2rem 0;
 	}
 
-	.quote p {
-		line-height: 1.2;
-	}
 
 	.catagories {
 		display: flex;
