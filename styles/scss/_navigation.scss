@@ -8,7 +8,9 @@
 	background-position: center;
 	width: 1.5rem;
 	height: 1.5rem;
-	
+	z-index: 3;
+	position: relative;
+
 }
 
 #nav-button.open {
@@ -17,22 +19,38 @@
 }
 
 #nav-container {
-	position: relative;
+	position: fixed;
+	left: -100%;
 	width: 100%;
+	top: 0;
+	height: 100vh;
 	z-index: 2;
+	transition: left 0.5s ease-out;
+}
+
+#nav-container.open {
+	left: 0;
+	transition: left 0.5s ease-out;
 }
 
 #nav {
-	position: absolute;
 	background-color: rgba(0,0,0,0.8);
-	width: 100%;
-	top: -600px;
-	margin-bottom: 5rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 1.5rem;
+	padding-top: 10rem;
+}
+
+#nav.open {
+	right: 0;
 }
 
 nav {
 	color: $primary-color;
-	text-align: center;
+	text-align: left;
 	a {
 		display:block;
 		border-style: solid;
@@ -40,6 +58,7 @@ nav {
 		border-color: $primary-color;
 		font-size: 1.5em;
 		margin: 0.5rem 0;
+		text-align: left;
 	}
 	a.selected {
 		color: $primary-color;
@@ -121,10 +140,16 @@ nav {
 		display: none;
 	}
 
+	#nav-container {
+		position: initial;
+		height: initial;
+	}
+
 	#nav {
 		position: relative !important;
 		background-color: unset;
 		top: 0 !important;
+		padding: 0;
 	}
 
 	nav {

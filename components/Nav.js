@@ -24,37 +24,28 @@ const Nav = () => {
       }
    }
 
-   const closeMenu = () => {
-      if (pos === -600) {
-         clearInterval(id);
-      } else {
-         pos -= 6;
-         elem.style.top = pos + 'px';
-      }
-   }
+   // const closeMenu = () => {
+   //    if (pos === -600) {
+   //       clearInterval(id);
+   //    } else {
+   //       pos -= 6;
+   //       elem.style.top = pos + 'px';
+   //    }
+   // }
 
    const slideMenu = () => {
-      elem = document.getElementById("nav");
+      elem = document.getElementById("nav-container");
       button = document.getElementById("nav-button");
       button.classList.toggle("open");
-      if (pos === -600) {
-         id = setInterval(openMenu, 1);
-         openMenu()
-
-      } else {
-         clearInterval(id);
-         id = setInterval(closeMenu, 1);
-         closeMenu()
-      }
+      elem.classList.toggle("open");
    }
 
+
    const closeOnSelection = () => {
-      elem = document.getElementById("nav");
+      elem = document.getElementById("nav-container");
       button = document.getElementById("nav-button");
-      button.classList.toggle("open");
-      clearInterval(id);
-      id = setInterval(closeMenu, 1);
-      closeMenu()
+      button.classList.remove("open");
+      elem.classList.remove("open");
    }
 
    return (
