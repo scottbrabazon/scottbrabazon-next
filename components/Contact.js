@@ -38,6 +38,7 @@ const Contact = () => {
                         <li>Aurora Commerce</li>
                         <li>Shopify</li>
                         <li>Craft CMS</li>
+                        <li>Wordpress</li>
                         <li>Monetate</li>
                         <li>Mailchimp</li>
                         <li>Campaign Monitor</li>
