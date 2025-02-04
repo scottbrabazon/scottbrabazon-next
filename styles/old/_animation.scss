@@ -1,0 +1,120 @@
+.fade-in {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+// HEADER IMAGE HOMEPAGE
+
+.st0{fill:#E0E0E0;}
+.st1{fill:#FFFFFF;}
+.st2{opacity:0.3;}
+.st3{fill:#EBEBEB;}
+.st4{fill:#B6883F;}
+.st5{display:none;}
+.st6{display:inline;fill:#EBEBEB;}
+.st7{fill:#455A64;}
+.st8{fill:#263238;}
+.st9{fill:#FAFAFA;}
+.st10{fill:#FFBE9D;}
+.st11{fill:#EB996E;}
+
+// REACT IMAGE HOMEPAGE
+
+.development .cls-1{fill:#bbb;}
+.development .cls-2{fill:#c58836;}
+.development .cls-3{fill:#fff;}
+.development .cls-4{fill:#455a64;}
+.development .cls-5{fill:#e1e1e1;}
+.development .cls-6{fill:#263238;}
+.development .cls-7{fill:#c78976;}
+.development .cls-8{fill:#b66955;}
+.development .cls-9{fill:#fafafa;}
+.development .cls-10{fill:none;}
+
+.catagories .development:hover .cls-2{
+  fill:$secondary-color;
+}
+
+
+// ECOMMERCE IMAGE HOMEPAGE
+
+.retail .cls-1{fill:none;}
+.retail .cls-2{fill:#bbb;}
+.retail .cls-3{fill:#fff;}
+.retail .cls-4{opacity:0.5;}
+.retail .cls-5{fill:#ebebeb;}
+.retail .cls-6{fill:#263238;}
+.retail .cls-7{fill:#455a64;}
+.retail .cls-8{fill:#fafafa;}
+.retail .cls-9{clip-path:url(#c);}
+.retail .cls-10{fill:#b6883f;}
+.retail .cls-11{opacity:0.2;}
+.retail .cls-12{opacity:0.4;}
+.retail .cls-13{fill:#c78976;}
+.retail .cls-14{opacity:0.3;}
+.retail .cls-15{fill:#995037;}
+.retail .cls-16{clip-path:url(#b);}
+.retail .cls-17{clip-path:url(#a);}
+.retail .cls-18{opacity:0.8;}
+.retail .cls-19{opacity:0.7;}
+.retail .golddress .cls-10{fill:#b6883f !important;}
+.retail .greydress .cls-10{fill:#bbb  !important;}
+.retail .greendress .cls-10{fill:#455a64  !important;}
+.retail .darkgreendress .cls-10{fill:#263238  !important;}
+
+.catagories .retail:hover .cls-10{
+  fill:$secondary-color;
+}
+
+
+// DESIGN IMAGE HOMEPAGE
+
+.design .cls-1{fill:#fafafa;}
+.design .cls-2{fill:#f5f5f5;}
+.design .cls-3{fill:#bbb;}
+.design .cls-4{fill:#e1e1e1;}
+.design .cls-5{fill:#c58836;}
+.design .cls-6{fill:#fff;}
+.design .cls-7{fill:#455a64;}
+.design .cls-8{fill:#ffbf9d;}
+.design .cls-9{fill:#263238;}
+.design .cls-10{fill:#ff9a6c;}
+.design .cls-11{fill:none;}
+
+.catagories .design:hover .cls-5{
+  fill:$secondary-color;
+}
+
+
+
+
+

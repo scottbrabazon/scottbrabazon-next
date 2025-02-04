@@ -1,0 +1,59 @@
+@use 'variables' as *; 
+
+.expertise {
+
+	h2 {
+		margin-bottom: 3rem;
+	}
+
+	padding: 6rem 0;
+	@media only screen and (min-width: 768px) {
+		padding: 9rem 0;
+	}
+
+	.title {
+		grid-column: 3 / 23;
+	}
+
+	.tech-col {
+		grid-column: 3 / 23;
+		margin-bottom: 3rem;
+		@media only screen and (min-width: 992px) {
+			grid-column: 3 / 10;
+			border-left: 1px solid $white;
+			padding-left: 1.5rem;
+			margin-bottom: 0;
+		}
+		@media only screen and (min-width: 1300px) {
+			grid-column: 3 / 8;
+		}
+	}
+
+	.platforms-col {
+		grid-column: 3 / 23;
+		margin-bottom: 3rem;
+		@media only screen and (min-width: 992px) {
+			grid-column: 10 / 17;
+			border-left: 1px solid $white;
+			padding-left: 1.5rem;
+			margin-bottom: 0;
+		}
+		@media only screen and (min-width: 1300px) {
+			grid-column: 8 / 13;
+		}
+	}
+
+	.software-col {
+		grid-column: 3 / 23;
+		@media only screen and (min-width: 992px) {
+			grid-column: 17 / 23;
+			border-left: 1px solid $white;
+			padding-left: 1.5rem;
+			margin-bottom: 0;
+		}
+		@media only screen and (min-width: 1300px) {
+			grid-column: 13 / 18;
+		}
+	}
+
+}

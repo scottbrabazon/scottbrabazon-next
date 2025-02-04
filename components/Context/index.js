@@ -13,20 +13,24 @@ export class Provider extends Component {
 
       const query = `{
          projectCollection {
-            items {
-               name
-               href
-               img {
-                 url
-               }
-               type
-               lightboxCollection {
-                 items {
-                   url
-                 }
-               }
-             }
-         }
+          items {
+            name
+            href
+            projectTag
+            projectDescription {
+              json
+            }
+            img {
+              url
+            }
+            featured
+            lightboxCollection {
+              items {
+                url
+              }
+            }
+          }
+        }
       }`
 
       window.fetch("https://graphql.contentful.com/content/v1/spaces/s80bj3lhgmoj?access_token=ABIoJPTjbVtx3lsnXu_0CG1_3d0MFRSHqh8UftRuWKw", {
@@ -59,7 +63,6 @@ export class Provider extends Component {
             photoIndex: prevState.projects[index].lightboxCollection.photoIndex = 0,
          }));
       }
-      // trackOutboundLink('https://www.jacamo.co.uk/'); return true;
    }
 
    closeLightbox = (index) => {
@@ -82,7 +85,6 @@ export class Provider extends Component {
 
    render() {
 
-      // Sort by name
       this.state.projects.sort(function(a, b) {
          var nameA = a.name.toUpperCase();
          var nameB = b.name.toUpperCase();
@@ -92,7 +94,6 @@ export class Provider extends Component {
          if (nameA > nameB) {
             return 1;
          }
-        // names must be equal
         return 0;
       });
 

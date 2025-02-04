@@ -3,7 +3,7 @@ import Home from '../components/Home';
 import Head from 'next/head';
 import Script from 'next/script';
 
-// scottbrabazon.com/
+// scott-brabazon.com/
 
 export default function HomePage() {
   return (
@@ -11,27 +11,26 @@ export default function HomePage() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Scott Brabazon | Frontend Developer | Manchester</title>
-        <meta
-          name="description"
-          content="Hello, I'm Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business."
+        <title>Scott Brabazon | Frontend Developer & Web Designer | Northwest England</title>
+        <meta 
+          name="description" 
+          content="I'm Scott Brabazon, a frontend developer and web designer based in Northwest England. I craft modern, responsive websites that deliver seamless user experiences. Let’s bring your ideas to life!" 
         />
         <meta name="author" content="Scott Brabazon" />
-        <meta property="og:title" content="Scott Brabazon | Frontend Developer | Manchester" />
+        <meta property="og:title" content="Scott Brabazon | Frontend Developer & Web Designer" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.scottbrabazon.com/" />
-        <meta
-          property="og:description"
-          content="Hello, I'm Scott. As an experienced frontend developer and designer, I help businesses offer their customers and clients high quality digital experiences and engaging concepts. I craft user interfaces using modern frontend technologies and make sure they get attention. I have worked in the Manchester creative industry for over 2 decades and during that time, I have worked on some on the very biggest names in the business."
+        <meta property="og:url" content="https://www.scott-brabazon.com/" />
+        <meta 
+          property="og:description" 
+          content="I create high-performance, user-friendly websites with clean code and thoughtful design. Based in Northwest England, I help businesses stand out online." 
         />
-        {/*<meta property="og:image" content="image.png" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />*/}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-TG1PM9QJQ3"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TG1PM9QJQ3" strategy="afterInteractive" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];

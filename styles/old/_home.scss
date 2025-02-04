@@ -1,0 +1,164 @@
+.home .header-decoration {
+	margin: 5rem auto 0.5rem;
+	width: 50%;
+	max-width: 15rem;
+	display: block;
+}
+
+.home .header-decoration img {
+	width: 100%;
+}
+
+.home header {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 3rem;
+}
+
+.home header p {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home header p:first-of-type {
+	font-weight: 600;
+	margin-top: 1.5rem;
+}
+
+.home header h1 {
+	margin: 0;
+	font-size: 2.3rem;
+}
+
+.home header h2 {
+	margin: 0 0 3rem;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.home header img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.quote {
+	// border-top: 1px solid #fff;
+	// border-bottom: 1px solid #fff;
+	font-style: italic;
+	font-size: 	2rem;
+	padding: 2.5rem 2rem 2rem;
+	background: url("../public/img/open-quote.svg") left top no-repeat, url("../public/img/close-quote.svg") right bottom no-repeat;
+    background-size: 2.5rem;
+    margin: 1.5rem 0 1rem;
+    p {
+    	margin: 0;
+    	font-family: 'Playfair', serif;
+    	line-height: 1.1;
+    }
+}
+
+.catagories {
+	margin-top: 1.5rem;
+	border-top: 1px solid #fff;
+	padding-top: 3rem;
+}
+
+.catagories h2 {
+	margin: 1.2rem 0 0.5rem;
+	// text-align: left;
+}
+
+.catagories p {
+	margin: 0 0 0.5rem;
+	// text-align: left;
+}
+
+.catagories .cta {
+	color: #b6883f;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 1rem auto 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.catagories .cta:before {
+	content: url("/img/circle-arrow-right-solid.svg");
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.development:hover .cta, .development:hover h2 {
+	color: $secondary-color !important;
+}  
+
+.design:hover .cta, .design:hover h2 {
+	color: $secondary-color !important;
+} 
+
+.retail:hover .cta, .retail:hover h2 {
+	color: $secondary-color !important;
+}
+
+
+
+/******** TABLET LAYLOUTS *********/
+
+@media screen and (min-width: 768px) {
+
+	.home .header-decoration {
+		margin: 1rem auto 0.5rem;
+	}	
+
+	.home header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.home header > div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.home p, .home h1, .home h2,  {
+		text-align: center;
+	}
+
+	.home header div:first-of-type {
+		order: 2;
+		align-self: center;
+	}
+
+	.quote {
+		font-size: 2.1rem;
+        padding: 0 0 0rem 1.6em;
+	    background-size: 2rem;
+		margin: 2rem 0;
+	}
+
+
+	.catagories {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 4rem;
+	}
+
+	.catagories a {
+		display: block;
+		width: 30%;
+	}
+}
+
+
+
+
+
+
+
+
+

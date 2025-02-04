@@ -1,0 +1,341 @@
+/******** Definings *********/
+@import "_variables.scss";
+
+/******** MOBILE LAYLOUTS *********/
+
+body {
+	background-color: #000;
+}
+
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto !important;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	text-align: center;
+}
+
+.read-more {
+	color: #b6883f;
+	font-size: 0.9rem;
+	font-weight: bold;
+	margin: 0.75rem auto 3rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.read-more:before {
+	content: url("/img/circle-arrow-right-solid.svg");
+	display: inline-block;
+	height: 0.9rem;
+	width: 0.9rem;
+	margin-right: 0.5rem;
+}
+
+.main-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 1rem;
+	position: relative;
+
+}
+
+.paging {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Poppins', serif;
+	color: $primary-color;
+	display: inline-block;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: 0 0 15px 0;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/******** Header *********/
+
+header {
+	margin-top: 4rem;
+	h1:first-letter {
+		text-transform: capitalize;
+	}
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+
+/* Emails Page */
+
+.emails-page {
+	width: 86%;
+	padding: 0 7%;
+	display: inline-block;
+	vertical-align: top;
+	li {
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+	}
+	img {
+		max-width: none;
+	}
+}
+
+.listing li {
+	margin: 0;
+}
+
+
+/* Archive */
+
+.archive-panel {
+	li {
+		display: list-item;
+	}
+	ul {
+		margin-bottom: 10px;
+	}
+}
+
+.archive-panel-push {
+	li {
+		display: list-item;
+	}
+	ul {
+		margin-bottom: 10px;
+	}
+}
+
+
+/* Contact */
+
+.about ul {
+	margin-bottom: 30px;
+}
+
+.about p {
+	margin-bottom: 2rem;
+}
+
+#map {
+  height: 30rem;
+  margin: 2rem auto 0;
+  width: auto;
+  display: block;
+}
+
+.contact {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	img {
+		margin: 35px 0 0 0;
+	}
+}
+
+// .contact-details {
+// 	margin: 1rem auto 0.2rem;
+// 	display: block;
+// }
+
+.contact-details {
+	margin-top: 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: $primary-color;
+}
+
+
+.contact-details a:hover{
+	color: #bebebe;
+}
+
+.expertise {
+	h2 {
+		color: $primary-color;
+		margin: 0 0 0.5rem;
+	}
+	li {
+		margin: 0.2rem 0;
+	}
+}
+
+.phone-number {
+	margin: 0;
+}
+
+/* Contact */
+
+.sidebar {
+	display: none;
+}
+
+/******** TABLET LAYLOUTS *********/
+
+@media screen and (min-width: 768px) {
+	/* General */
+	body,
+	h1,
+	h2,
+	h3,
+	a,
+	p,
+	li {
+		text-align: left;
+	}
+	body {
+		background: url("../public/img/background-wide-wallpaper-1920x1080-005.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	footer {
+		text-align: left;
+	}
+	header h1 {
+		text-align: left;
+		// margin-top: 0;
+	}
+	.archive-panel {
+		width: 86%;
+		padding: 0 7%;
+	}
+	.archive-panel-push {
+		width: 86%;
+		padding: 0 7%;
+	}
+	.sidebar {
+		display: unset;
+		width: 25%;
+		margin-top: 0;
+		> div {
+			position: sticky;
+			top: 2rem;
+			padding-left: 1rem;
+			border-style: solid;
+			border-width: 0 0 0 1px;
+			border-color: $primary-color;
+		}
+		.primary-content:hover .read-more, 
+		.primary-content:hover h2 {
+			color: $secondary-color;
+		}
+		h2 {
+			margin: 0 0 0.5rem;
+			font-size: 1.8rem;
+		}
+		p {
+			margin: 0 0 0.5rem;
+
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.primary-content {
+			width: 100%;
+			padding: 0;
+			border: none;
+			margin-bottom: 2rem;
+			h2 {
+				// color: #fff;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	/* Contact */
+	.about p {
+		margin-bottom: 0rem;
+	}
+	.email h3 {
+		font-size: 1.5em;
+	}
+	.expertise {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+		ul {
+			margin-bottom: 0;
+		}
+	}
+	.expertise-col {
+		flex: 1;
+		width: 45%;
+		margin-right: 2%;
+		padding: 0 2%;
+		border-style: solid;
+		border-width: 0 0 0 1px;
+		border-color: $primary-color;
+		margin-bottom: 2rem;
+	}
+	.contact-details {
+		text-align: left;
+	}
+	.contact-details span br {
+		display: none;
+	}
+	footer {
+		justify-content: left;
+	}
+}
+
+@media screen and (min-width: 890px) {
+	/* General */
+	// header {
+	// 	margin: 0;
+	// }
+	.paging {
+		text-align: left;
+	}
+	.contact {
+		margin-top: -1rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.about {
+		width: 50%;
+		padding-right: 5%;
+	}
+	// .contact-form {
+	// 	width: 50%;
+	// 	float: right;
+	// }
+	#map {
+	  height: 28vw;
+	  margin: 0;
+	  width: 50%;
+	  display: block;
+	}
+}

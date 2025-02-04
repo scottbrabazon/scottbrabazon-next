@@ -1,187 +1,29 @@
-/******** Navigation *********/
-
-#nav-button {
-	padding: 0;
-	border: none;
-	background: url("../public/img/burger-menu-closed.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 1.5rem;
-	height: 1.5rem;
-	z-index: 3;
-	position: relative;
-
-}
-
-#nav-button.open {
-	background: url("../public/img/burger-menu-open.svg");
-	background-repeat: no-repeat;
-}
-
-#nav-container {
-	position: fixed;
-	left: -100%;
-	width: 100%;
-	top: 0;
-	height: 100vh;
-	z-index: 2;
-	transition: left 0.5s ease-out;
-}
-
-#nav-container.open {
-	left: 0;
-	transition: left 0.5s ease-out;
-}
-
-#nav {
-	background-color: rgba(0,0,0,0.8);
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	padding: 1.5rem;
-	padding-top: 10rem;
-}
-
-#nav.open {
-	right: 0;
-}
+@use 'variables' as *; 
 
 nav {
-	color: $primary-color;
-	text-align: left;
-	a {
-		display:block;
-		border-style: solid;
-		border-width: 0 0 1px 0;
-		border-color: $primary-color;
-		font-size: 1.5em;
-		margin: 0.5rem 0;
-		text-align: left;
-	}
-	a.selected {
-		color: $primary-color;
-	}
-	a:hover {
-		color: $secondary-color;
-	}
-}
-
-.nav-contact-links {
 	position: absolute;
-	top: 0;
+	top: 1rem;
+	left: 0;
 	right: 0;
-	z-index: 4;
-	display: flex;
-	align-items: flex-end;
-}
 
-.nav-contact-links a {
-	display: block;
-	padding-left: 0.75rem;
-}
-
-.nav-contact-links img:hover {
-	filter: invert(53%) sepia(80%) saturate(330%) hue-rotate(358deg) brightness(89%) contrast(88%);
-}
-
-.rollover li {
-	display: block;
-	width: 13px;
-	height: 14px;
-	// background-image: url('../public/img/home-icon-black.svg');
-}
-
-.rollover li:hover {
-	display: block;
-	width: 13px;
-	height: 14px;
-	// background-image: url('../public/img/home-icon-black.svg');
-}
-
-.mobile-nav button:focus {
-	outline: none;
-}
-
-.mobile-nav button {
-	text-align: center;
-	padding: 0;
-	border: 0;
-	margin: 0;
-	background-color: transparent;
-}
-
-.open-close-button svg g:nth-child(3) {
-	display: inherit;
-}
-
-.open-close-button svg g:nth-child(2) {
-	transform: rotate(0deg);
-	transition: .25s ease-in-out;
-	transform-origin: 50% 50%;
-}
-
-
-/*.open-close-button.open svg g:nth-child(3) {
-  display: none;
-}*/
-
-.open-close-button.open svg g:nth-child(2) {
-	transform: rotate(90deg);
-	transform-origin: 50% 50%;
-}
-
-/******** TABLET LAYLOUTS *********/
-
-@media screen and (min-width: 768px) {
-
-	#nav-button {
-		display: none;
+	.nav-container {
+		grid-column: 3 / 23;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	#nav-container {
-		position: initial;
-		height: initial;
+	a {
+		color: $white;
+		text-decoration: none;
+		margin: 0 2rem 0 0;
+		&.selected {
+			text-decoration: underline;
+		}
 	}
 
-	#nav {
-		position: relative !important;
-		background-color: unset;
-		top: 0 !important;
-		padding: 0;
+	.social-links a {
+		margin-right: 0;
 	}
 
-	nav {
-		text-align: left;
-		color: #FFF;
-		margin-bottom: 2rem;
-	}
-	nav a {
-		display: inline-block;
-		margin: 0px 2px 0px 2px;
-		padding: 0;
-		border-width: 0;
-		font-size: 1rem;
-	}
-	nav a::after { 
-		 content: " | ";
-		 padding: 0 0.25rem;
-		 color: $primary-color;
-	}
-	nav a:last-of-type::after { 
-		 content: "";
-	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,70 @@
+@use 'variables' as *; 
+
+.footer {
+
+	color: $white;
+	padding: 0 0 3rem;
+	@media only screen and (min-width: 768px) {
+		padding: 0 0 4rem;
+	}
+
+	.row-1 {
+		grid-column: 3 / 23;
+	}
+
+	.line-container {
+		grid-column: 3 / 23;
+		margin: 1rem 0;
+	}
+
+	.line {
+		background-color: $white;
+	}
+
+	.row-2 {
+		grid-column: 3 / 18;
+	}
+
+	.row-3 {
+		grid-column: 3 / 23;
+		p {
+			margin-bottom: 0;
+			font-size: 0.75rem;
+		}
+		a {
+			color: $white;
+			font-size: 0.75rem;
+			text-decoration: none;
+			margin-left: 0.5rem;
+			&.selected {
+				text-decoration: underline;
+			}
+		}
+		.row-3-container {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.footer-headline {
+		font-size: 2rem;
+		line-height: 0.8;
+		font-family: 'GeneralSans-Bold', Arial, sans-serif;
+		text-transform: uppercase;
+		margin: 0 0 3rem;
+		filter: drop-shadow(1rem 1rem 3rem #000000);
+	  	@media only screen and (min-width: 576px) {
+			font-size: calc(2rem + 4vw); 
+		}
+		@media only screen and (min-width: 769px) {
+			font-size: calc(3.5rem + 3vw); 
+		}
+	}
+
+	.break {
+		display: none;
+		@media only screen and (min-width: 1300px) {
+			display: inline;
+		}
+	}
+}

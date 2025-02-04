@@ -7,94 +7,66 @@ import Image from 'next/image';
 const Nav = () => {
 
    const router = useRouter();
-
-   // MOBILE NAVIGATION BURGER TOGGLE
-
-   let id = null; 
-   let pos = -600;
-   let elem = "";
-   let button = "";
-
-   const openMenu = () => {
-      if (pos === 0) {
-         clearInterval(id);
-      } else {
-         pos += 6;
-         elem.style.top = pos + 'px';
-      }
-   }
-
-   // const closeMenu = () => {
-   //    if (pos === -600) {
-   //       clearInterval(id);
-   //    } else {
-   //       pos -= 6;
-   //       elem.style.top = pos + 'px';
-   //    }
-   // }
-
-   const slideMenu = () => {
-      elem = document.getElementById("nav-container");
-      button = document.getElementById("nav-button");
-      button.classList.toggle("open");
-      elem.classList.toggle("open");
-   }
-
-
-   const closeOnSelection = () => {
-      elem = document.getElementById("nav-container");
-      button = document.getElementById("nav-button");
-      button.classList.remove("open");
-      elem.classList.remove("open");
-   }
+   const currentPage = router.pathname === '/' ? 'home' : router.pathname.split('/')[1];
 
    return (
 
       <Fragment>
+         
+         <nav id="nav" className={`grid-container ${currentPage}`}>
 
-         <button id="nav-button" onClick={slideMenu} aria-label="Burger menu" />
+            <div className="nav-container">
 
-         <div id="nav-container">
-            <nav id="nav">
+               <div className="nav-links">
 
-               <Link href="/" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/" ? "selected" : ""}>Home</a>
-               </Link>
+                  <Link href="/" legacyBehavior >
+                     <a className={router.pathname == "/" ? "selected" : ""}>home</a>
+                  </Link>
 
-               <Link href="/development" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/development" ? "selected" : ""}>Development</a>
-               </Link>
+                  <Link href="/work" legacyBehavior >
+                     <a className={router.pathname == "/work" ? "selected" : ""}>work</a>
+                  </Link>
 
-               <Link href="/design" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/design" ? "selected" : ""}>Design</a>
-               </Link>
+                  <Link href="/about" legacyBehavior >
+                     <a className={router.pathname == "/about" ? "selected" : ""}>about</a>
+                  </Link>
 
-               <Link href="/retail" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/retail" ? "selected" : ""}>Retail</a>
-               </Link>
+               </div>
 
-               <Link href="/insights" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/insights/[url]" || router.pathname == "/insights" ? "selected" : ""}>Insights</a>
-               </Link>
+               <div className="social-links">
 
-               <Link href="/contact" legacyBehavior >
-                  <a onClick={() => closeOnSelection()} className={router.pathname == "/contact" ? "selected" : ""}>Contact</a>
-               </Link>
-               
-            </nav>
-         </div>
 
-         <div className="nav-contact-links">
-            <a href="https://github.com/scottbrabazon" target="blank">
-                  <Image src="/img/github.svg" alt="Github" width="22" height="22" />
-               </a>
-               <a href="https://uk.linkedin.com/in/scottbrabazon" target="blank">
-                  <Image src="/img/linkedin.svg" alt="LinkedIn" width="22" height="22" />
-               </a>
-               <a href="mailto:scott.brabazon@googlemail.com" target="blank">
-                  <Image src="/img/email.svg" alt="LinkedIn" width="22" height="22" />
-               </a>
-         </div>
+                  <Link href="https://www.linkedin.com/in/scottbrabazon/" legacyBehavior >
+                     <a target="_blank" rel="noopener noreferrer">
+                        <img 
+                           src="/img/linkedin.svg" 
+                           alt="Linkedin" 
+                           priority="true"
+                           className="social-logo"
+                           width="20"
+                           height="20"
+                        />
+                     </a>
+                  </Link>
+
+                  <Link href="mailto:scott.brabazon@googlemail.com" legacyBehavior >
+                     <a target="_blank" rel="noopener noreferrer">
+                        <img 
+                           src="/img/email.svg" 
+                           alt="Email" 
+                           priority="true"
+                           className="social-logo"
+                           width="20"
+                           height="20"
+                        />
+                     </a>
+                  </Link>
+
+               </div>
+
+            </div>
+            
+         </nav>
 
       </Fragment>
 

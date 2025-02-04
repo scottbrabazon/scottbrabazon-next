@@ -1,15 +1,11 @@
 export const Sections = [
 
 	{
-		section: "Development",
+		section: "work",
 		id: 1
 	},
 	{
-		section: "Design",
+		section: "about",
 		id: 2
-	},
-	{
-		section: "Retail",
-		id: 3
 	},
 ];
