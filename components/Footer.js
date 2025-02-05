@@ -42,9 +42,9 @@ const Footer = () => {
                <span className="fade-left">
                   Ready to make a digital impact?
                   <br className="break" />
-               </span>{' '}
+               </span>
                <span className="bg-image-text fade-right">
-                  Let's create something unforgettable!
+                  Let&apos;s create something unforgettable!
                </span>
             </p>
          </div>
@@ -52,14 +52,14 @@ const Footer = () => {
          <div className="row-1 fade-up">
             <div>
                <p className="phone">
-                  phone: <a href="tel:+447963657287">+44 (0)796 365 7287</a>
+                  phone: <a href="tel:+447963657287">+44 (0)796&nbsp;365&nbsp;7287</a>
                </p>
                <p className="linkedin">
-                  linkedin:{' '}
+                  linkedin:&nbsp;
                   <a href="https://www.linkedin.com/in/scottbrabazon/">view profile</a>
                </p>
                <p className="email">
-                  email:{' '}
+                  email:&nbsp;
                   <a href="mailto:scott.brabazon@googlemail.com">
                      scott.brabazon@googlemail.com
                   </a>
