@@ -32,7 +32,6 @@ const HomeIntro = () => {
                 <Image 
                    src="/img/quote.svg" 
                    alt="Quote" 
-                   priority="true"
                    className="quote"
                    width="50"
                    height="50"

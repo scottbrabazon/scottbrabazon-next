@@ -41,7 +41,6 @@ const Nav = () => {
                         <Image 
                            src="/img/linkedin.svg" 
                            alt="Linkedin" 
-                           priority="true"
                            className="social-logo"
                            width="20"
                            height="20"
@@ -54,7 +53,6 @@ const Nav = () => {
                         <Image 
                            src="/img/email.svg" 
                            alt="Email" 
-                           priority="true"
                            className="social-logo"
                            width="20"
                            height="20"
