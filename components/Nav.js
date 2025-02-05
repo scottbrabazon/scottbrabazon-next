@@ -19,15 +19,15 @@ const Nav = () => {
 
                <div className="nav-links">
 
-                  <Link href="/" legacyBehavior >
+                  <Link href="/" legacyBehavior passHref>
                      <a className={router.pathname == "/" ? "selected" : ""}>home</a>
                   </Link>
 
-                  <Link href="/work" legacyBehavior >
+                  <Link href="/work" legacyBehavior passHref>
                      <a className={router.pathname == "/work" ? "selected" : ""}>work</a>
                   </Link>
 
-                  <Link href="/about" legacyBehavior >
+                  <Link href="/about" legacyBehavior passHref>
                      <a className={router.pathname == "/about" ? "selected" : ""}>about</a>
                   </Link>
 
@@ -36,7 +36,7 @@ const Nav = () => {
                <div className="social-links">
 
 
-                  <Link href="https://www.linkedin.com/in/scottbrabazon/" legacyBehavior >
+                  <Link href="https://www.linkedin.com/in/scottbrabazon/" legacyBehavior passHref>
                      <a target="_blank" rel="noopener noreferrer">
                         <Image 
                            src="/img/linkedin.svg" 
@@ -48,7 +48,7 @@ const Nav = () => {
                      </a>
                   </Link>
 
-                  <Link href="mailto:scott.brabazon@googlemail.com" legacyBehavior >
+                  <Link href="mailto:scott.brabazon@googlemail.com" legacyBehavior passHref>
                      <a target="_blank" rel="noopener noreferrer">
                         <Image 
                            src="/img/email.svg" 

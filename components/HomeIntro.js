@@ -10,7 +10,7 @@ const HomeIntro = () => {
     return (
         <div className="grid-container fade-left">
             <div className="home-intro col-1">
-                <Link href="/work" legacyBehavior>
+                <Link href="/work" legacyBehavior passHref>
                     <a className="btn-primary">
                         <svg>
                             <rect x="0" y="0" fill="none" width="100%" height="100%" />
@@ -19,7 +19,7 @@ const HomeIntro = () => {
                     </a>
                 </Link>
 
-                <Link href="/about" legacyBehavior>
+                <Link href="/about" legacyBehavior passHref>
                     <a className="btn-primary">
                         <svg>
                             <rect x="0" y="0" fill="none" width="100%" height="100%" />
