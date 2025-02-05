@@ -96,19 +96,19 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
 };
 
 WorkThumbnail.propTypes = {
-  name: PropTypes.string,
-  href: PropTypes.string,
-  img: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
   lightbox: PropTypes.shape({
     items: PropTypes.arrayOf(
       PropTypes.shape({
         url: PropTypes.string.isRequired,
       })
     ),
-    isOpen: PropTypes.bool,
-    photoIndex: PropTypes.number,
   }),
-  index: PropTypes.number,
+  index: PropTypes.number.isRequired,
+  description: PropTypes.node.isRequired, // Since you're using documentToReactComponents, which returns React nodes
+  tag: PropTypes.string,
 };
 
 export default WorkThumbnail;
