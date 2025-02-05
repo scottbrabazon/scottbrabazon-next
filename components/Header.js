@@ -30,7 +30,7 @@ const Header = () => {
             <div className="content">
                 <h2 className="small-caps">Scott Brabazon / {currentPage}</h2>
                 <h1>
-                    <span className="fade-right">Designer <span className="serif">&</span></span><br />
+                    <span className="fade-right">Designer <span className="serif">&amp;</span></span><br />
                     <span className="bg-image-text fade-right"><span className="italic">Frontend</span> developer</span>
                 </h1>
                 <div className="line-container">
