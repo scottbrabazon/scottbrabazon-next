@@ -3,21 +3,31 @@ import { useEffect } from 'react';
 const useStickyFilter = () => {
   useEffect(() => {
     const header = document.querySelector('header');
+    const beacon = document.querySelector('#beacon-1');
     const filterContainer = document.querySelector('.filter-container');
 
-    if (!header || !filterContainer) return;
+    if (!header || !beacon || !filterContainer) return;
+
+    let headerOut = false;
+    let beaconOut = false;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          // When header is out of view, activate sticky filter
-          filterContainer.classList.add('sticky');
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === header) {
+            headerOut = !entry.isIntersecting;
+          }
+          if (entry.target === beacon) {
+            beaconOut = !entry.isIntersecting;
+          }
+        });
 
+        if (headerOut && beaconOut) {
+          filterContainer.classList.add('sticky');
           setTimeout(() => {
             filterContainer.classList.add('active');
           }, 50);
         } else {
-          // When header is back in view, remove sticky
           filterContainer.classList.remove('sticky', 'active');
         }
       },
@@ -25,6 +35,7 @@ const useStickyFilter = () => {
     );
 
     observer.observe(header);
+    observer.observe(beacon);
 
     return () => observer.disconnect();
   }, []);

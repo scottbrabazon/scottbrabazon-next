@@ -63,6 +63,7 @@ const Work = () => {
 											))}
 									</select>
 								</div>
+								<div id="beacon-1"></div>
 							</div>
 
 							<div className="home-intro intro fade-left">
@@ -75,9 +76,6 @@ const Work = () => {
 				                />
 				                <p>Take a look at some of my recent projects! I design and develop modern, responsive websites that not only look great but also feel effortless to use. Every project is unique, tailored to fit the client&rsquo;s needs while ensuring a smooth, engaging experience for users. Whether it&rsquo;s a portfolio, an online store, or a custom solution, I focus on creativity, functionality, and attention to detail.</p>
 				            </div>
-
-							{/* Scroll Target */}
-							<div id="beacon-1"></div>
 
 							<div className="content grid-container">
 								{filteredProjects.map((project, index) => (
