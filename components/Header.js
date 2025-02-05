@@ -31,7 +31,20 @@ const Header = () => {
                 <h2 className="small-caps">Scott Brabazon / {currentPage}</h2>
                 <h1>
                     <span className="fade-right">Designer <span className="serif">&amp;</span></span><br />
-                    <span className="bg-image-text fade-right"><span className="italic">Frontend</span> developer</span>
+                    <span 
+                        className="fade-right" 
+                        style={{
+                            background: 'url(/img/grad-1-bg.webp)',
+                            backgroundSize: '100%',
+                            backgroundPosition: 'center',
+                            color: 'transparent',
+                            WebkitBackgroundClip: 'text',
+                            backgroundClip: 'text',
+                            display: 'inline-block'
+                        }}
+                    >
+                        <span className="italic">Frontend</span> developer
+                    </span>
                 </h1>
                 <div className="line-container">
                     <div className="line" ref={lineRef}></div>
