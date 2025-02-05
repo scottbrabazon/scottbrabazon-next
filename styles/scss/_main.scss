@@ -240,6 +240,7 @@ li::marker {
 	display: flex;
 	flex-direction: column;
 	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
 
 	&:hover {
 		.project-headline-container {
