@@ -31,18 +31,23 @@ h1 {
 }
 
 h2 {
-
-	font-size: 3.125rem; 
+	font-size: 2rem; 
 	line-height: 0.9;
 	display: block;
 	filter: drop-shadow(1rem 1rem 3rem #000000);
+	@media only screen and (min-width: 768px) {
+		font-size: 3.125rem; 
+	}
 }
 
 h3 {
 	line-height: 0.9;
 	margin-bottom: 0.5rem;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: block;
+	@media only screen and (min-width: 768px) {
+		font-size: 2rem;
+	}
 }
 
 ul {
