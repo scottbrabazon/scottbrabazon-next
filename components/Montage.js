@@ -1,4 +1,5 @@
- import useImageFadeIn from '../hooks/useImageFadeIn';
+import Image from 'next/image';
+import useImageFadeIn from '../hooks/useImageFadeIn';
 
  const Montage = () => {
 
@@ -8,33 +9,48 @@
 
       <section className="montage">
          <div className="montage-col-1">
-            <img 
-               src="/img/everton.webp" 
-               alt="Everton" 
-               className="montage-image everton image-fade-in"
-            />
-            <img 
-               src="/img/wcb.webp" 
-               alt="FIFA World Cup 2010" 
-               className="montage-image wcb image-fade-in"
-            />
+            <div className="everton">
+               <Image 
+                  src="/img/everton.webp" 
+                  alt="Everton" 
+                  className="montage-image image-fade-in"
+                  fill={true}
+               />
+            </div>
+            <div className="wcb">
+               <Image 
+                  src="/img/wcb.webp" 
+                  alt="FIFA World Cup 2010" 
+                  className="montage-image wcb image-fade-in"
+                  fill={true}
+               />
+            </div>
          </div>
          <div className="montage-col-2">
-            <img 
-               src="/img/united.webp" 
-               alt="Manchester United" 
-               className="montage-image united image-fade-in"
-            />
-            <img 
-               src="/img/ftctc.webp" 
-               alt="From the Caribbean 2 Coventry" 
-               className="montage-image ftc2c image-fade-in"
-            />
-            <img 
-               src="/img/city.webp" 
-               alt="Manchester City" 
-               className="montage-image city image-fade-in"
-            />
+            <div className="united">
+               <Image 
+                  src="/img/united.webp" 
+                  alt="Manchester United" 
+                  className="montage-image united image-fade-in"
+                  fill={true}
+               />
+            </div>
+            <div className="ftctc">
+               <Image 
+                  src="/img/ftctc.webp" 
+                  alt="From the Caribbean 2 Coventry" 
+                  className="montage-image ftc2c image-fade-in"
+                  fill={true}
+               />
+            </div>
+            <div className="city">
+               <Image 
+                  src="/img/city.webp" 
+                  alt="Manchester City" 
+                  className="montage-image city image-fade-in"
+                  fill={true}
+               />
+            </div>
          </div>
       </section>
 

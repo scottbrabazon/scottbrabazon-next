@@ -248,10 +248,10 @@ li::marker {
 		width: 31.25rem;
 	}
 
-	.project-thumbnail {
+	.project-image-container {
 		width: 100%;
-		display: block;
-		// aspect-ratio: 697 / 418 !important;
+		aspect-ratio: 697 / 418;
+		position: relative;
 	}
 
 	.project-headline-container {

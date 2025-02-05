@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import useFadeLeft from '../hooks/useFadeLeft';
 
@@ -15,7 +16,7 @@ const AboutIntro = () => {
                 </div>
             </div>
             <div className="home-intro intro">
-                <img 
+                <Image 
                    src="/img/quote.svg" 
                    alt="Quote" 
                    priority="true"

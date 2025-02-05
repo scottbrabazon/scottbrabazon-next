@@ -61,9 +61,40 @@
 }
 
 .montage {
+
 	@media only screen and (min-width: 622px) {
 		display: grid;
 		grid-template-columns: 56.81% 43.19%;
+	}
+
+	.everton {
+		aspect-ratio: 818 / 553;
+		width: 100%;
+		position: relative;
+	}
+
+	.wcb {
+		aspect-ratio: 818 / 471;
+		width: 100%;
+		position: relative;
+	}
+
+	.united {
+		aspect-ratio: 625 / 366;
+		width: 100%;
+		position: relative;
+	}
+
+	.ftctc {
+		aspect-ratio: 622 / 301;
+		width: 100%;
+		position: relative;
+	}
+
+	.city {
+		aspect-ratio: 622 / 358;
+		width: 100%;
+		position: relative;
 	}
 
 	.montage-image {
@@ -105,6 +136,12 @@
 	}
 
 	.logo-container {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		position: relative;
+	}
+
+	.logos-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3rem;

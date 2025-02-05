@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Consumer } from './Context';
-import WorkThumbnail from './WorkThumbnail';
 import { useRouter } from 'next/router';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Image from 'next/image';
+import WorkThumbnail from './WorkThumbnail';
 import useFadeLeft from '../hooks/useFadeLeft';
 import useStickyFilter from '../hooks/useStickyFilter';
 
@@ -65,7 +66,7 @@ const Work = () => {
 							</div>
 
 							<div className="home-intro intro fade-left">
-				                <img 
+				                <Image 
 				                   src="/img/quote.svg" 
 				                   alt="Quote" 
 				                   priority="true"

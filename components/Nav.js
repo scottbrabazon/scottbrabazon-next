@@ -1,7 +1,7 @@
 import {Consumer} from './Context';
-import Link from 'next/link';
 import {Fragment} from 'react';
 import {useRouter} from 'next/router';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const Nav = () => {
@@ -38,7 +38,7 @@ const Nav = () => {
 
                   <Link href="https://www.linkedin.com/in/scottbrabazon/" legacyBehavior >
                      <a target="_blank" rel="noopener noreferrer">
-                        <img 
+                        <Image 
                            src="/img/linkedin.svg" 
                            alt="Linkedin" 
                            priority="true"
@@ -51,7 +51,7 @@ const Nav = () => {
 
                   <Link href="mailto:scott.brabazon@googlemail.com" legacyBehavior >
                      <a target="_blank" rel="noopener noreferrer">
-                        <img 
+                        <Image 
                            src="/img/email.svg" 
                            alt="Email" 
                            priority="true"

@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
 import PropTypes from 'prop-types';
 import useDrawLine from '../hooks/useDrawLine';
 import useFadeUp from '../hooks/useFadeUp';
+import 'yet-another-react-lightbox/styles.css';
 
 
 const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) => {
@@ -49,13 +49,16 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
 
     <div className={`project ${isWorkPage ? 'fade-up' : ''}`}>
       <a href={href} target="_blank" rel="noreferrer">
-        <img
-          src={img}
-          alt={name}
-          loading="lazy"
-          onClick={(e) => handleOpenLightbox(e, index, lightbox)}
-          className="project-thumbnail"
-        />
+        <div className="project-image-container">
+          <Image
+            src={img}
+            alt={name}
+            loading="lazy"
+            onClick={(e) => handleOpenLightbox(e, index, lightbox)}
+            className="project-thumbnail"
+            fill={true}
+          />
+        </div>
       </a>
        <div className="project-headline-container">
           <h3 className="project-title">{name}</h3>
