@@ -14,7 +14,7 @@ const Footer = () => {
       }
 
       // Select elements to be observed
-      const elements = document.querySelectorAll('.fade-left, .fade-up, .line');
+      const elements = document.querySelectorAll('.fade-left, .fade-right .fade-up, .line');
 
       // Create observer
       const observer = new IntersectionObserver(
