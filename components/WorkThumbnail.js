@@ -48,7 +48,7 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
   return (
 
     <div className={`project ${isWorkPage ? 'fade-up' : ''}`}>
-      <a href={href} target="_blank" rel="noreferrer">
+      <a href={href || '#'} target="_blank" rel="noreferrer">
         <div className="project-image-container">
           <Image
             src={img}
@@ -65,20 +65,20 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
           <p  className="project-tags small-caps">{tag}</p>
        </div>
        <div className="project-description">{description}</div>
-       <a
-          onClick={(e) => handleOpenLightbox(e, index, lightbox)}
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          className="btn-secondary"
-        >
-        <span className="view">
-          View project
-        </span>
-        <div className="line-container">
-            <div className="line" ref={lineRef}></div>
-        </div>
-      </a>
+         <a
+            onClick={(e) => handleOpenLightbox(e, index, lightbox)}
+            href={href || '#'}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary"
+          >
+          <span className="view">
+            View project
+          </span>
+          <div className="line-container">
+              <div className="line" ref={lineRef}></div>
+          </div>
+        </a>
       <div>
         {isOpen && lightboxImages.length > 0 && (
           <Lightbox
