@@ -24,8 +24,8 @@ export default function HomePage() {
           property="og:description" 
           content="I create high-performance, user-friendly websites with clean code and thoughtful design. Based in Northwest England, I help businesses stand out online." 
         />
-        <link rel="preload" href="/fonts/general-sans/GeneralSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-        <link rel="preload" href="/fonts/general-sans/GeneralSans-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="preload" href="/fonts/general-sans/GeneralSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/general-sans/GeneralSans-BoldItalic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
