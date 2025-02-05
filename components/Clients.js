@@ -11,7 +11,7 @@ const Clients = () => {
 
          <div className="content">
             <div>
-               <h2>Favourite clients</h2>
+               <h2>Favourite <br className="break-mobile" /> clients</h2>
             </div>
 
             <div className="logos-container">

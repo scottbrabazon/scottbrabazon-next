@@ -14,7 +14,7 @@
 
 	.projects-container {
 		grid-column: 3 / 25;
-		overflow: hidden; /* Hide overflowing content */
+		overflow: hidden;
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -23,27 +23,31 @@
 
 	.inner-container {
 		display: flex;
-		gap: 20px; /* Adjust spacing between projects */
-		width: max-content; /* Allows it to be wider than the viewport */
-		padding-right: 5rem;
+		gap: 20px;
+		width: max-content;
+		@media only screen and (min-width: 768px) {
+			padding-right: 5rem;
+		}
 	}
 
 	.view-all {
 		background-color: $white;
 		color: $black;
 		font-family: 'GeneralSans-Bold', Arial, sans-serif;
-		font-size: 1.5rem;
+		font-size: 1em;
 		text-transform: uppercase;
 		display: flex;
 		justify-content: center;
 	    align-items: flex-end;
 	    text-align: center;
 	    margin-right: 2rem;
-	    width: 5rem;
+	    width: 3rem;
 	    cursor: pointer;
 	    transition: background-color 0.3s, color 0.3s;
 	    @media only screen and (min-width: 768px) {
 	    	margin-right: 5rem;
+	    	font-size: 1.5rem;
+	    	width: 5rem;
 	    }
 	    &:hover {
 	    	background-color: $black;
@@ -54,7 +58,10 @@
 			transform: rotate(-90deg);
 		    white-space: nowrap;
 		    position: relative;
-		    bottom: 4.5rem;
+		    bottom: 3rem;
+			@media only screen and (min-width: 768px) {
+				bottom: 5.5rem;
+			}
 		}
 	}
 

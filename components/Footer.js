@@ -41,7 +41,7 @@ const Footer = () => {
             <p className="footer-headline">
                <span className="fade-left">
                   Ready to make a digital impact?
-                  <br className="break" />
+                  <br className="break-desktop" />
                </span>
                <span className="bg-image-text fade-right">
                   Let&apos;s create something unforgettable!

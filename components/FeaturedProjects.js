@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
   return (
     <section className="featured-projects grid-container">
       <div className="content">
-        <h2>Featured projects</h2>
+        <h2>Featured <br className="break-mobile" />projects</h2>
       </div>
 
       <div className="projects-container">

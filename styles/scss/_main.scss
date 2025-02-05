@@ -85,6 +85,19 @@ li::marker {
 	display: inline-block;
 }
 
+.break-mobile {
+	@media only screen and (min-width: 1300px) {
+		display: none;
+	}
+}
+
+.break-desktop {
+	display: none;
+	@media only screen and (min-width: 1300px) {
+		display: inline;
+	}
+}
+
 .small-caps {
 	font-family: 'GeneralSans-Regular', Arial, sans-serif;
 	letter-spacing: 0.2rem;
