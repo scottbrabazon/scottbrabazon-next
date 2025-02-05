@@ -21,6 +21,7 @@ const Clients = () => {
                   alt="Simply Be" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -29,6 +30,7 @@ const Clients = () => {
                   alt="Manchester United" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -37,6 +39,7 @@ const Clients = () => {
                   alt="Jacamo" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -45,6 +48,7 @@ const Clients = () => {
                   alt="Chelsea FC" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -53,6 +57,7 @@ const Clients = () => {
                   alt="From the Caribbean 2 Coventry" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -61,6 +66,7 @@ const Clients = () => {
                   alt="Fashion World" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -69,6 +75,7 @@ const Clients = () => {
                   alt="Manchester City" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
                <div className="logo-container">
@@ -77,6 +84,7 @@ const Clients = () => {
                   alt="Cheshire Pixel" 
                   className="client-logo image-fade-in"
                   fill={true}
+                  sizes="100%, auto"
                   />
                </div>
             </div>

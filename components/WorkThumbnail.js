@@ -57,6 +57,7 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
             onClick={(e) => handleOpenLightbox(e, index, lightbox)}
             className="project-thumbnail"
             fill={true}
+            sizes="100%, auto"
           />
         </div>
       </a>
@@ -97,7 +98,7 @@ const WorkThumbnail = ({ name, href, img, lightbox, index, description, tag }) =
 
 WorkThumbnail.propTypes = {
   name: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
   img: PropTypes.string.isRequired,
   lightbox: PropTypes.shape({
     items: PropTypes.arrayOf(
