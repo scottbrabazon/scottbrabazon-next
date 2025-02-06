@@ -36,7 +36,7 @@ const HomeIntro = () => {
                    width="50"
                    height="50"
                 />
-                <p>Hi. I&rsquo;m a frontend developer and designer based in the Northwest of England, passionate about creating websites that look great and work even better. I love turning ideas into engaging, user-friendly experiences with clean, responsive code. Whether you need a brand-new site or just a refresh, I&rsquo;m here to help. Let&rsquo;s team up and build something amazing!</p>
+                <p>Hi. I&rsquo;m a frontend developer and designer based in the Northwest of England, passionate about creating websites that look great and work even better. I love turning ideas into engaging, user-friendly experiences with clean, responsive code. Whether you need a brand-new site or just a refresh, I&rsquo;m here to help. <strong>Let&rsquo;s team up and build something amazing!</strong></p>
             </div>
         </div>
     );

@@ -74,7 +74,7 @@ const Work = () => {
 				                   width="50"
 				                   height="50"
 				                />
-				                <p>Take a look at some of my recent projects! I design and develop modern, responsive websites that not only look great but also feel effortless to use. Every project is unique, tailored to fit the client&rsquo;s needs while ensuring a smooth, engaging experience for users. Whether it&rsquo;s a portfolio, an online store, or a custom solution, I focus on creativity, functionality, and attention to detail.</p>
+				                <p><strong>Take a look at some of my recent projects!</strong> I design and develop modern, responsive websites that not only look great but also feel effortless to use. Every project is unique, tailored to fit the client&rsquo;s needs while ensuring a smooth, engaging experience for users. Whether it&rsquo;s a portfolio, an online store, or a custom solution, I focus on creativity, functionality, and attention to detail.</p>
 				            </div>
 
 							<div className="content grid-container">
