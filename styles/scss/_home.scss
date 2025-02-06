@@ -30,9 +30,19 @@
 		}
 	}
 
+	.project-title {
+		margin-bottom: 0.25rem;
+		font-size: 1.25rem;
+		min-height: 36px;
+		@media only screen and (min-width: 768px) {
+			min-height: initial;
+		}
+	}
+
 	.view-all {
-		background-color: $white;
-		color: $black;
+		// background-color: $white;
+		color: $white;
+		border-left: 1px solid $white;
 		font-family: 'GeneralSans-Bold', Arial, sans-serif;
 		font-size: 1em;
 		text-transform: uppercase;
@@ -40,7 +50,7 @@
 		justify-content: center;
 	    align-items: flex-end;
 	    text-align: center;
-	    margin-right: 2rem;
+	    margin-right: 5rem;
 	    width: 3rem;
 	    cursor: pointer;
 	    transition: background-color 0.3s, color 0.3s;
@@ -49,19 +59,16 @@
 	    	font-size: 1.5rem;
 	    	width: 5rem;
 	    }
-	    &:hover {
-	    	background-color: $black;
-			color: $white;
-			transition: background-color 0.3s, color 0.3s;
-	    }
+	  //   &:hover {
+	  //   	background-color: $black;
+			// color: $white;
+			// transition: background-color 0.3s, color 0.3s;
+	  //   }
 		.view-all-container {
 			transform: rotate(-90deg);
 		    white-space: nowrap;
 		    position: relative;
 		    bottom: 3rem;
-			@media only screen and (min-width: 768px) {
-				bottom: 5.5rem;
-			}
 		}
 	}
 

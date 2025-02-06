@@ -16,9 +16,12 @@ nav {
 	a {
 		color: $white;
 		text-decoration: none;
-		margin: 0 2rem 0 0;
+		margin: 0 0.5rem 0 0;
 		&.selected {
 			text-decoration: underline;
+		}
+		@media only screen and (min-width: 768px) {
+			margin: 0 2rem 0 0;
 		}
 	}
 

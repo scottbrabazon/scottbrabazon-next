@@ -275,8 +275,12 @@ li::marker {
 	.project-headline-container {
 		background-color: $white;
 		color: $black;
-		padding: 1.25rem 1.5rem;
+		padding: 1rem;
 		margin-bottom: 1rem;
+		// min-height: 84px;
+		@media only screen and (min-width: 768px) {
+			padding: 1.25rem 1.5rem;
+		}
 	}
 
 	.project-title {
@@ -288,13 +292,19 @@ li::marker {
 		margin-bottom: 0;
 		line-height: 1;
 		font-size: 0.75rem;
-		letter-spacing: 0.15rem;
-		font-family: 'GeneralSans-Bold', Arial, sans-serif;
+		letter-spacing: 0;
+		font-family: 'GeneralSans-Regular', Arial, sans-serif;
+		@media only screen and (min-width: 768px) {
+			letter-spacing: 0.15rem;
+		}
 	}
 
 	.project-description {
-		padding: 0 1.5rem;
+		padding: 0 1rem;
 		flex-grow: 1;
+		@media only screen and (min-width: 768px) {
+			padding: 0 1.5rem;
+		}
 	}
 
 	.btn-secondary {
